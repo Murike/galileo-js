@@ -154,7 +154,8 @@ const mockPromptTemplate: PromptTemplate = {
 const mockScorer: Scorer = {
   id: 'scorer-123',
   name: 'correctness',
-  scorer_type: ScorerTypes.preset
+  scorer_type: ScorerTypes.preset,
+  tags: []
 };
 
 describe('experiments utility', () => {

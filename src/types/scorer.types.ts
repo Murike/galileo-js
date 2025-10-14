@@ -61,12 +61,8 @@ export type ModelType = components['schemas']['ModelType'];
 
 export type ChainPollTemplate = components['schemas']['ChainPollTemplate'];
 
-export interface Scorer {
-  id: string;
-  name: string;
-  scorer_type: ScorerTypes;
-  defaults?: ScorerDefaults;
-}
+// Use API type instead of local interface
+export type Scorer = components['schemas']['ScorerResponse'];
 
 export enum OutputType {
   BOOLEAN = 'boolean',
